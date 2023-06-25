@@ -1,193 +1,192 @@
 <template>
-  <div>
-    <div class="container mt-5 pt-5 pb-5 text-center contain w-75">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              viewBox="0 0 36 26"
-            >
-              <path
-                fill="#2ebd7f"
-                d="M35.918 2.52c-.205-.895-.816-1.667-1.596-2.114C33.832.162 33.3 0 32.73 0H3.272C2.7 0 2.17.162 1.678.406.86.853.288 1.626.082 2.52.042 2.76 0 3.005 0 3.25v19.5C0 24.537 1.473 26 3.272 26h29.455c1.8 0 3.272-1.463 3.272-3.25V3.25c0-.244-.042-.488-.082-.73zm-5.893.73L18 12.31 5.973 3.25h24.052zm2.704 19.5H3.272V5.322l13.746 10.36c.285.203.653.324.98.324s.695-.12.98-.324l13.75-10.36V22.75z"
-              ></path>
-            </svg>
-          </i>
-          <br />
-          <div class="modal-header mHeader">
-            <h1 class="card-title text-center"></h1>
-          </div>
-          <br />
-          <div class="modal-body">
-            <p class="text-black">
-              Join our great coworking space and community. Please fill out the
-              form and our manager will get back asap.
-            </p>
-            <br />
-
-            <div class="row g-3">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control mInput"
-                  placeholder="First name"
-                  aria-label="First name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control mInput"
-                  placeholder="Last name"
-                  aria-label="Last name"
-                />
-              </div>
+    <div>
+        <div class="container my-6">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 text-dark fw-semibold ls--2">
+                        Contact Us
+                    </h1>
+                    <p>Reach out to us and we'll respond as soon as we can.</p>
+                </div>
             </div>
-            <br />
-            <div class="row g-3">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control mInput"
-                  placeholder="Email"
-                  aria-label="Email"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control mInput"
-                  placeholder="Phone"
-                  aria-label="Phone"
-                />
-              </div>
-              <textarea
-                class="form-control mInput2"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-          </div>
-          <br />
-          <div class="modal-footer border-0">
-            <button type="button" class="btn w-100 rTB" data-bs-dismiss="modal">
-              SEND
-            </button>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</template>
 
+        <section class="section mb-0">
+            <div class="container">
+                <div class="row align-items-stretch col-mb-50 mb-0">
+                    <div class="col-lg-6">
+                        <div class="fancy-title title-border">
+                            <h3>Send us an Email</h3>
+                        </div>
+                        <div class="form-widget">
+                            <div class="form-result"></div>
+                            <form
+                                class="mb-0"
+                                id="template-contactform"
+                                name="template-contactform"
+                                action="include/form.php"
+                                method="post"
+                                novalidate="novalidate"
+                            >
+                                <div class="form-process">
+                                    <div class="css3-spinner">
+                                        <div class="css3-spinner-scaler"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="template-contactform-name"
+                                            >Name <small>*</small></label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="template-contactform-name"
+                                            name="template-contactform-name"
+                                            value=""
+                                            class="form-control required"
+                                        />
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label for="template-contactform-email"
+                                            >Email <small>*</small></label
+                                        >
+                                        <input
+                                            type="email"
+                                            id="template-contactform-email"
+                                            name="template-contactform-email"
+                                            value=""
+                                            class="required email form-control"
+                                        />
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label for="template-contactform-phone"
+                                            >Phone</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="template-contactform-phone"
+                                            name="template-contactform-phone"
+                                            value=""
+                                            class="form-control"
+                                        />
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-md-12 form-group">
+                                        <label
+                                            for="template-contactform-subject"
+                                            >Subject <small>*</small></label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="template-contactform-subject"
+                                            name="subject"
+                                            value=""
+                                            class="required form-control"
+                                        />
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-12 form-group">
+                                        <label
+                                            for="template-contactform-message"
+                                            >Message <small>*</small></label
+                                        >
+                                        <textarea
+                                            class="required form-control"
+                                            id="template-contactform-message"
+                                            name="template-contactform-message"
+                                            rows="6"
+                                            cols="30"
+                                        ></textarea>
+                                    </div>
+                                    <div class="col-12 form-group d-none">
+                                        <input
+                                            type="text"
+                                            id="template-contactform-botcheck"
+                                            name="template-contactform-botcheck"
+                                            value=""
+                                            class="form-control"
+                                        />
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <button
+                                            name="submit"
+                                            type="submit"
+                                            id="submit-button"
+                                            tabindex="5"
+                                            value="Submit"
+                                            class="button button-3d m-0"
+                                        >
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                                <input
+                                    type="hidden"
+                                    name="prefix"
+                                    value="template-contactform-"
+                                />
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 min-vh-50">
+                        <div class="position-relative map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13604.137429122837!2d74.317006!3d31.5232163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905d79978b6fd%3A0x67ff390983c234db!2snoble%20cospace!5e0!3m2!1sen!2s!4v1687718596380!5m2!1sen!2s"
+                                allowfullscreen
+                                style="border: 0"
+                                class="w-100 h-100"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-mb-50 mb-4">
+                    <div class="col-sm-6 col-lg-6">
+                        <div
+                            class="feature-box fbox-center fbox-bg fbox-plain border-secondary"
+                        >
+                            <div class="fbox-icon bg-light">
+                                <NuxtLink to="/location"
+                                    ><i class="uil uil-map-marker"></i
+                                ></NuxtLink>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>
+                                    Visit Us<span class="subtitle"
+                                        >337, Rehmanpura, Lahore</span
+                                    >
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div
+                            class="feature-box fbox-center fbox-bg fbox-plain border-secondary"
+                        >
+                            <div class="fbox-icon bg-light">
+                                <a href="tel:+923238878361"
+                                    ><i class="bi-telephone"></i
+                                ></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3>
+                                    Speak to Us<span class="subtitle"
+                                        >0323 8878361</span
+                                    >
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
 <script>
 export default {
-  name: "contact",
+    data() {
+        return {};
+    },
 };
 </script>
-
-<style scoped>
-.card-title {
-  margin-left: 355px;
-}
-
-.mInput {
-  border-radius: 0%;
-  padding: 10px;
-  font-size: 13px;
-}
-
-.mInput:focus {
-  outline: none !important;
-  border-color: #2ebd7f;
-  box-shadow: 0 0 1px #2ebd7f;
-}
-
-.mInput2 {
-  border-radius: 0%;
-  padding: 10px;
-  font-size: 13px;
-  width: 98.4%;
-  margin-left: 8px;
-  height: 120px;
-}
-
-.mInput2:focus {
-  outline: none !important;
-  border-color: #2ebd7f;
-  box-shadow: 0 0 1px #2ebd7f;
-}
-
-.rTB {
-  background-color: #2ebd7f;
-  color: white;
-  border-style: none;
-  border-radius: 0;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media only screen and (max-width: 770px) {
-  .card-title {
-    margin-left: 60px;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .card-title {
-    margin-left: 60px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .card-title {
-    margin-left: 60px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .card-title {
-    margin-left: 60px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .card-title {
-    margin-left: 60px;
-  }
-  .mInput2 {
-    width: 95%;
-  }
-}
-@media only screen and (max-width: 470px) {
-  .card-title {
-    margin-left: 60px;
-  }
-
-  .mInput2 {
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width: 405px) {
-  .card-title {
-    margin-left: 60px;
-  }
-
-  .mInput2 {
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .card-title {
-    margin-left: 60px;
-  }
-
-  .mInput2 {
-    width: 95%;
-  }
-}
-</style>

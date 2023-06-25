@@ -1,20 +1,50 @@
 <template>
-  <div>
-    <AppHeader />
-    <Nuxt />
-    <AppFooter />
-  </div>
+    <div id="wrapper">
+        <!-- <PreHeader /> -->
+        <Header />
+        <section id="content">
+            <Nuxt />
+        </section>
+        <Footer />
+
+        <!-- JavaScripts
+	============================================= -->
+        <script src="/js/functions.js"></script>
+    </div>
 </template>
 
 <script>
-import AppHeader from "~/components/inc/AppHeader.vue";
-import AppFooter from "~/components/inc/AppFooter.vue";
-
 export default {
-  name: "default",
-  components: {
-    AppHeader,
-    AppFooter,
-  },
+    name: "default",
+    methods: {
+        async initTheme() {
+            console.log("test");
+            const Semicolon = await new Promise((res) => {
+                // wait for SEMICOLON to be defined
+                const check = () => {
+                    if (typeof SEMICOLON !== "undefined") {
+                        res(SEMICOLON);
+                    } else {
+                        setTimeout(check, 100);
+                    }
+                };
+
+                check();
+            });
+
+            Semicolon.Core.runBase();
+            Semicolon.Core.runModules();
+        },
+    },
+    watch: {
+        $route() {
+            this.$nextTick(() => {
+                setTimeout(this.initTheme, 200);
+            });
+        },
+    },
+    mounted() {
+        this.initTheme();
+    },
 };
 </script>
