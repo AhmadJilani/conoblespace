@@ -27,6 +27,10 @@ export default {
                 content: "Affordable luxury coworking space.",
             },
             { name: "format-detection", content: "telephone=no" },
+            {
+                name: "robots",
+                content: "noindex,nofollow",
+            },
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
