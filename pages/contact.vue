@@ -92,6 +92,19 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Contact | noble cospace",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content:
+                        "Contact us for any queries regarding our work space.",
+                },
+            ],
+        };
+    },
     data() {
         return {};
     },

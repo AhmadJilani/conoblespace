@@ -66,6 +66,19 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Location | noble cospace",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content:
+                        "Located in the heart of the city - we are are easily accessible from all parts of the city.",
+                },
+            ],
+        };
+    },
     data() {
         return {};
     },

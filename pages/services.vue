@@ -13,3 +13,19 @@
         <CTA class="bg-white" />
     </div>
 </template>
+<script>
+export default {
+    head() {
+        return {
+            title: "Services | noble cospace",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content: "We offer all that you need",
+                },
+            ],
+        };
+    },
+};
+</script>

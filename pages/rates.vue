@@ -66,6 +66,18 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Membership Plans | noble cospace",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content: "Find the Perfect Plan for Your Workspace Needs",
+                },
+            ],
+        };
+    },
     data() {
         return {
             faq: [
