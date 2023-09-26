@@ -2,7 +2,7 @@
     <div>
         <div class="container my-6">
             <div class="row justify-content-center text-center">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h1 class="display-4 text-dark fw-semibold ls--2">
                         Flexible Membership Options
                     </h1>
@@ -10,7 +10,7 @@
                         Find the Perfect Plan for Your Workspace Needs
                     </p>
                     <NuxtLink
-                        to="/contact"
+                        to="/forms/membership"
                         class="button button-rounded button-large m-0 text-center fw-medium text-transform-none ls-0 fw-normal"
                         >Book your Free Trial</NuxtLink
                     >

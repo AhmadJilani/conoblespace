@@ -22,11 +22,11 @@
                     <!-- #logo end -->
 
                     <div class="header-misc">
-                        <a class="top-phone" href="tel:+923238878361"
-                            ><i class="fa-solid fa-phone"></i>
-                            <span class="d-none d-md-inline-block"
-                                >0323 8878361</span
-                            ></a
+                        <NuxtLink class="top-phone" to="/forms/membership"
+                            ><i class="fa-solid fa-user-plus"></i>
+                            <span class="d-none d-md-inline-block">
+                                Membership
+                            </span></NuxtLink
                         >
                     </div>
 
@@ -52,6 +52,16 @@
                             >
                                 <NuxtLink class="menu-link" to="/"
                                     ><div>Home</div></NuxtLink
+                                >
+                            </li>
+                            <li
+                                class="menu-item"
+                                :class="{
+                                    current: activeRoute === '/services',
+                                }"
+                            >
+                                <NuxtLink class="menu-link" to="/services"
+                                    ><div>Services</div></NuxtLink
                                 >
                             </li>
                             <li

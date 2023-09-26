@@ -61,16 +61,33 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="col-lg-2 col-md-2 col-6">
+                        <div class="widget">
+                            <h4
+                                class="ls-0 mb-4 text-transform-none text-white"
+                            >
+                                Forms
+                            </h4>
+
+                            <ul class="list-unstyled ms-0">
+                                <li class="mb-2">
+                                    <NuxtLink to="/forms/membership"
+                                        >Membership Inquiry</NuxtLink
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div
-                        class="col-md-6 col-12 d-flex align-items-center justify-content-center"
+                        class="col-md-4 col-12 d-flex align-items-center justify-content-center"
                     >
-                        <h2 class="display-4 fw-semibold ls--2">
+                        <h2 class="display-4 fw-semibold ls--2 text-center">
                             better
                             <span
                                 class="text-rotater"
                                 data-separator="|"
-                                data-rotate="backInDown"
-                                data-speed="5000"
+                                data-rotate="flipInX"
+                                data-speed="3000"
                             >
                                 <span class="t-rotate"
                                     >environment|workspace|coworking|community</span

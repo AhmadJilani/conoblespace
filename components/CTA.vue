@@ -78,7 +78,7 @@
                     </p>
                     <div class="d-flex">
                         <NuxtLink
-                            to="/contact"
+                            to="/forms/membership"
                             class="button button-rounded button-xlarge d-block flex-fill m-0 text-center text-transform-none fw-semibold ls-0"
                             >Get 1 Day Trial</NuxtLink
                         >
@@ -103,7 +103,7 @@
                     </p>
                     <div class="d-flex">
                         <NuxtLink
-                            to="/contact"
+                            to="/forms/membership"
                             class="button button-rounded button-warning button-xlarge d-block flex-fill m-0 text-center text-transform-none fw-semibold ls-0"
                             >Become a Member</NuxtLink
                         >

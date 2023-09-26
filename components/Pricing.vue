@@ -71,7 +71,7 @@
                                 </ul>
 
                                 <NuxtLink
-                                    to="/rates"
+                                    to="/forms/membership"
                                     class="button button-rounded button-large w-100 m-0 text-center fw-medium"
                                     >Join Now</NuxtLink
                                 >

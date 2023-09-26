@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <div class="container my-6">
@@ -12,7 +11,6 @@
             </div>
         </div>
 
-
         <section class="section mb-0">
             <div class="container">
                 <div class="row align-items-stretch col-mb-50 mb-0">
@@ -20,123 +18,17 @@
                         <div class="fancy-title title-border">
                             <h3>Send us an Email</h3>
                         </div>
-                        <div id="app" class="form-widget">
-                            <div class="form-result"></div>
-
-                            <form
-                            ref="form"
-                                class="mb-0"
-                                id="template-contactform"
-                                name="template-contactform"
-                                method="post"
-                                action="https://docs.google.com/forms/d/e/1FAIpQLSdT-ePb2uAR-SHcgasCxeFajsdiEUezyEoeLxWwmLw4CAQ1bQ/formResponse"
-                                novalidate="novalidate"
-                            >
-                                <div class="form-process">
-                                    <div class="css3-spinner">
-                                        <div class="css3-spinner-scaler"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="entry.351062116"
-                                            >Name <small>*</small></label
-                                        >
-                                        <input
-                                        v-model="name"
-                                            type="text"
-                                            id="template-contactform-name"
-                                            name="entry.351062116"
-                                            value=""
-                                            class="form-control required"
-                                        />
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="entry.1095802241"
-                                            >Email <small>*</small></label
-                                        >
-                                        <input
-                                        v-model="email"
-                                            type="email"
-                                            id="template-contactform-email"
-                                            name="entry.1095802241"
-                                            value=""
-                                            class="required email form-control"
-                                        />
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="entry.1740074577"
-                                            >Phone</label
-                                        >
-
-                                        <input
-                                        v-model="phone"
-                                            type="text"
-                                            id="template-contactform-phone"
-                                            name="entry.1740074577"
-                                            value=""
-                                            class="form-control"
-                                        />
-                                    </div>
-                                    <div class="w-100"></div>
-                                    <div class="col-md-12 form-group">
-                                        <label
-                                            for="entry.979820084"
-                                            >Subject <small>*</small></label
-                                        >
-                                        <input
-                                        v-model="subject"
-                                            type="text"
-                                            id="template-contactform-subject"
-                                            name="entry.979820084"
-                                            value=""
-                                            class="required form-control"
-                                        />
-                                    </div>
-                                    <div class="w-100"></div>
-                                    <div class="col-12 form-group">
-                                        <label
-                                            for="entry.375415038"
-                                            >Message <small>*</small></label
-                                        >
-                                        <textarea
-                                        v-model="message"
-                                            class="required form-control"
-                                            id="template-contactform-message"
-                                            name="entry.375415038"
-                                            rows="6"
-                                            cols="30"
-                                        ></textarea>
-                                    </div>
-                                    <div class="col-12 form-group d-none">
-                                        <input
-                                            type="text"
-                                            id="template-contactform-botcheck"
-                                            name="template-contactform-botcheck"
-                                            value=""
-                                            class="form-control"
-                                        />
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <button
-                                        @click="submitPage()"
-                                            name="submit"
-                                            type="submit"
-                                            id="submit-button"
-                                            tabindex="5"
-                                            value="Submit"
-                                            class="button button-3d m-0"
-                                        >
-                                            Send
-                                        </button>
-                                    </div>
-                                </div>
-                                <input
-                                    type="hidden"
-                                    name="prefix"
-                                    value="template-contactform-"
-                                />
-                            </form>
+                        <div>
+                            <iframe
+                                data-tally-src="https://forms.noblecospace.com/contact?hideTitle=1&transparentBackground=1&dynamicHeight=1&embed=1"
+                                loading="lazy"
+                                width="100%"
+                                height="324"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0"
+                                title="Contact"
+                            ></iframe>
                         </div>
                     </div>
 
@@ -192,34 +84,35 @@
                 </div>
             </div>
         </section>
+
+        <MiniCTA>
+            Need 1 Day Trial for Free? <strong>Reserve Now</strong>
+        </MiniCTA>
     </div>
 </template>
 <script>
-
-export default{
+export default {
     data() {
-        return{
-            email: '',
-    name: '',
-    phone: '',
-    subject:'',
-    message:'',
+        return {};
+    },
+    methods: {},
+    mounted() {
+        var d = document,
+            w = "https://tally.so/widgets/embed.js",
+            v = function () {
+                "undefined" != typeof Tally
+                    ? Tally.loadEmbeds()
+                    : d
+                          .querySelectorAll("iframe[data-tally-src]:not([src])")
+                          .forEach(function (e) {
+                              e.src = e.dataset.tallySrc;
+                          });
+            };
+        if ("undefined" != typeof Tally) v();
+        else if (d.querySelector('script[src="' + w + '"]') == null) {
+            var s = d.createElement("script");
+            (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
         }
-
-  },
-  methods: {
-        // resetForm() {
-        //   this.$refs.form.reset();
-        // },
-        submitPage(){
-            setTimeout( () => this.$router.push({ path: '/submission'}), 5000);
-            setTimeout( ()=> this.$refs.form.reset(), 6000);
-
-
-        }
-      }
-
-
-}
-
+    },
+};
 </script>

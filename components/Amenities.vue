@@ -51,6 +51,12 @@ export default {
                         "Our conference room is perfect for meetings, presentations, and workshops, with the latest technology and space for up to 20 people.",
                 },
                 {
+                    icon: "fas fa-podcast",
+                    title: "Podcast/Recording Studio",
+                    description:
+                        "Our podcast/recording studio is equipped with the latest technology to help you create professional-quality content.",
+                },
+                {
                     icon: "fas fa-print",
                     title: "Printing Facilities",
                     description:

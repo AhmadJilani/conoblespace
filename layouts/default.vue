@@ -18,7 +18,6 @@ export default {
     name: "default",
     methods: {
         async initTheme() {
-            console.log("test");
             const Semicolon = await new Promise((res) => {
                 // wait for SEMICOLON to be defined
                 const check = () => {

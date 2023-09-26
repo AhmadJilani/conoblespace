@@ -8,6 +8,9 @@ export default {
     // },
 
     head: {
+        base: {
+            href: "/",
+        },
         title: "noble cospace",
         htmlAttrs: {
             lang: "en",
