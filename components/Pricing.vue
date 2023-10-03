@@ -93,14 +93,14 @@ export default {
                 {
                     title: "Flexible Desk",
                     tagline: "Economical but flexible.",
-                    price: 12000,
+                    price: 18000,
                     price_duration: "month",
                     features: ["8hr/day", "Free Tea/Coffee"],
                 },
                 {
                     title: "Dedicated Desk",
                     tagline: "Your personal desk.",
-                    price: 15000,
+                    price: 22000,
                     price_duration: "month",
                     features: [
                         "12hr/day",
@@ -113,7 +113,7 @@ export default {
                 {
                     title: "Private Office",
                     tagline: "It's all yours.",
-                    price: 18000,
+                    price: 26000,
                     price_duration: "month",
                     features: [
                         "12hr/day",
