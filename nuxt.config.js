@@ -30,10 +30,6 @@ export default {
                 content: "Affordable luxury coworking space.",
             },
             { name: "format-detection", content: "telephone=no" },
-            {
-                name: "robots",
-                content: "noindex,nofollow",
-            },
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
@@ -63,6 +59,7 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/axios
         "@nuxtjs/axios",
+        "@nuxtjs/sitemap",
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
