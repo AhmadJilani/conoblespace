@@ -23,15 +23,27 @@
                             <p class="text-white-50">
                                 affordable luxury coworking space
                             </p>
-                            <a href="#" class="social-icon h-bg-facebook">
+                            <a
+                                target="_blank"
+                                href="//facebook.com/noblecospace"
+                                class="social-icon h-bg-facebook"
+                            >
                                 <i class="fa-brands fa-facebook-f"></i>
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-icon h-bg-twitter">
+                            <a
+                                target="_blank"
+                                href="//twitter.com/noblecospace"
+                                class="social-icon h-bg-twitter"
+                            >
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
-                            <a href="#" class="social-icon h-bg-instagram">
+                            <a
+                                target="_blank"
+                                href="//instagram.com/noblecospace"
+                                class="social-icon h-bg-instagram"
+                            >
                                 <i class="fa-brands fa-instagram"></i>
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
@@ -48,6 +60,11 @@
                             <ul class="list-unstyled ms-0">
                                 <li class="mb-2">
                                     <NuxtLink to="/">Home</NuxtLink>
+                                </li>
+                                <li class="mb-2">
+                                    <NuxtLink to="/amenities"
+                                        >Amenities</NuxtLink
+                                    >
                                 </li>
                                 <li class="mb-2">
                                     <NuxtLink to="/rates">Rates</NuxtLink>
@@ -74,6 +91,20 @@
                                     <NuxtLink to="/forms/membership"
                                         >Membership Inquiry</NuxtLink
                                     >
+                                </li>
+                            </ul>
+
+                            <h4
+                                class="ls-0 mb-4 text-transform-none text-white"
+                            >
+                                Legal
+                            </h4>
+
+                            <ul class="list-unstyled ms-0">
+                                <li class="mb-2">
+                                    <NuxtLink to="/terms">
+                                        Terms &amp; Conditions
+                                    </NuxtLink>
                                 </li>
                             </ul>
                         </div>
