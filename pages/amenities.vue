@@ -17,7 +17,7 @@
 export default {
     head() {
         return {
-            title: "Services | noble cospace",
+            title: "Amenities | noble cospace",
             meta: [
                 {
                     hid: "description",

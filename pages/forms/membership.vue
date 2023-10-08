@@ -50,6 +50,19 @@
 </template>
 <script>
 export default {
+    head() {
+        return {
+            title: "Membership Inquiry | noble cospace",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content:
+                        "Fill out the form to inquire about our membership",
+                },
+            ],
+        };
+    },
     data() {
         return {};
     },

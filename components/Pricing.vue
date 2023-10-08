@@ -125,6 +125,27 @@ export default {
                         "Printing Credits",
                     ],
                 },
+                {
+                    title: "Day Pass",
+                    tagline: "For a day.",
+                    price: 1500,
+                    price_duration: "day",
+                    features: ["8hr/day", "Basic Amenities"],
+                },
+                {
+                    title: "Meeting Room",
+                    tagline: "For your meetings.",
+                    price: 2000,
+                    price_duration: "hour",
+                    features: ["Free Tea/Coffee", "Fully Equipped Room"],
+                },
+                {
+                    title: "Virtual Office",
+                    tagline: "Your business address.",
+                    price: 6000,
+                    price_duration: "month",
+                    features: ["Business Address", "Mail Handling"],
+                },
             ],
         };
     },

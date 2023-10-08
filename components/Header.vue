@@ -57,11 +57,11 @@
                             <li
                                 class="menu-item"
                                 :class="{
-                                    current: activeRoute === '/services',
+                                    current: activeRoute === '/amenities',
                                 }"
                             >
-                                <NuxtLink class="menu-link" to="/services"
-                                    ><div>Services</div></NuxtLink
+                                <NuxtLink class="menu-link" to="/amenities"
+                                    ><div>Amenities</div></NuxtLink
                                 >
                             </li>
                             <li
