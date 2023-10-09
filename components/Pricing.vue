@@ -94,14 +94,14 @@ export default {
                     title: "Flexible Desk",
                     tagline: "Economical but flexible.",
                     price: 18000,
-                    price_duration: "month",
+                    price_duration: "month/seat",
                     features: ["8hr/day", "Free Tea/Coffee"],
                 },
                 {
                     title: "Dedicated Desk",
                     tagline: "Your personal desk.",
                     price: 22000,
-                    price_duration: "month",
+                    price_duration: "month/seat",
                     features: [
                         "12hr/day",
                         "Free Tea/Coffee",
@@ -114,7 +114,7 @@ export default {
                     title: "Private Office",
                     tagline: "It's all yours.",
                     price: 26000,
-                    price_duration: "month",
+                    price_duration: "month/seat",
                     features: [
                         "12hr/day",
                         "Free Tea/Coffee",
@@ -129,7 +129,7 @@ export default {
                     title: "Day Pass",
                     tagline: "For a day.",
                     price: 1500,
-                    price_duration: "day",
+                    price_duration: "day/seat",
                     features: ["8hr/day", "Basic Amenities"],
                 },
                 {
