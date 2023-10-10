@@ -12,6 +12,28 @@
 
             <div class="row">
                 <div class="col-12">
+                    <div class="promo promo-light p-4 p-md-5 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg">
+                                <h3>
+                                    20% off introductory discount for the first
+                                    6 months
+                                </h3>
+                                <p>
+                                    This discount is valid for a limited time
+                                    only; applicable on all membership plans.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-auto mt-4 mt-lg-0">
+                                <NuxtLink
+                                    to="/forms/membership"
+                                    class="button button-large button-circle button-black m-0"
+                                >
+                                    Reserve Now
+                                </NuxtLink>
+                            </div>
+                        </div>
+                    </div>
                     <div
                         id="price-carousel"
                         class="owl-carousel carousel-widget"
@@ -51,9 +73,28 @@
                                 </div>
                             </div>
                             <div class="card-body">
+                                <div
+                                    class="text-muted h3 mb-0"
+                                    v-if="rate.discounted_price"
+                                >
+                                    <del
+                                        >Rs.
+                                        {{ formatNumber(rate.price) }}
+                                    </del>
+                                    <span
+                                        class="badge bg-secondary shadow-sm ms-2"
+                                        v-if="rate.discounted_price"
+                                    >
+                                        20% off
+                                    </span>
+                                </div>
                                 <div class="price-title pb-3">
                                     Rs.
-                                    {{ formatNumber(rate.price) }}
+                                    {{
+                                        formatNumber(
+                                            rate.discounted_price || rate.price
+                                        )
+                                    }}
                                     <small>PKR/{{ rate.price_duration }}</small>
                                 </div>
 
@@ -94,6 +135,7 @@ export default {
                     title: "Flexible Desk",
                     tagline: "Economical but flexible.",
                     price: 18000,
+                    discounted_price: 18000 * 0.8,
                     price_duration: "month/seat",
                     features: ["12hr/day", "Free Tea/Coffee"],
                 },
@@ -101,6 +143,7 @@ export default {
                     title: "Dedicated Desk",
                     tagline: "Your personal desk.",
                     price: 22000,
+                    discounted_price: 22000 * 0.8,
                     price_duration: "month/seat",
                     features: [
                         "24hr/day",
@@ -114,6 +157,7 @@ export default {
                     title: "Private Office",
                     tagline: "It's all yours.",
                     price: 26000,
+                    discounted_price: 26000 * 0.8,
                     price_duration: "month/seat",
                     features: [
                         "24hr/day",
