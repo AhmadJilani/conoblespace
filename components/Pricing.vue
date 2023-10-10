@@ -95,7 +95,7 @@ export default {
                     tagline: "Economical but flexible.",
                     price: 18000,
                     price_duration: "month/seat",
-                    features: ["8hr/day", "Free Tea/Coffee"],
+                    features: ["12hr/day", "Free Tea/Coffee"],
                 },
                 {
                     title: "Dedicated Desk",
@@ -103,7 +103,7 @@ export default {
                     price: 22000,
                     price_duration: "month/seat",
                     features: [
-                        "12hr/day",
+                        "24hr/day",
                         "Free Tea/Coffee",
                         "Meeting Room Credits",
                         "Personal Locker",
@@ -116,7 +116,7 @@ export default {
                     price: 26000,
                     price_duration: "month/seat",
                     features: [
-                        "12hr/day",
+                        "24hr/day",
                         "Free Tea/Coffee",
                         "Meeting Room Credits",
                         "Personal Lockers",
