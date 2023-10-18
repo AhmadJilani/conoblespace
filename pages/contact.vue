@@ -68,14 +68,14 @@
                             class="feature-box fbox-center fbox-bg fbox-plain border-secondary"
                         >
                             <div class="fbox-icon bg-light">
-                                <a href="tel:+923238878361"
+                                <a href="tel:+924232803320"
                                     ><i class="bi-telephone"></i
                                 ></a>
                             </div>
                             <div class="fbox-content">
                                 <h3>
                                     Speak to Us<span class="subtitle"
-                                        >0323 8878361</span
+                                        >+92 423 2803320</span
                                     >
                                 </h3>
                             </div>

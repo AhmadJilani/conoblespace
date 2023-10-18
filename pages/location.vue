@@ -47,7 +47,7 @@
                         </h3>
                         <small class="text-black-50">Phone Number</small>
                         <br />
-                        <a href="tel:+923238878361">0323 8878361</a>
+                        <a href="tel:+924232803320">+92 423 2803320</a>
                         <br />
                         <small class="text-black-50">Email</small>
                         <br />

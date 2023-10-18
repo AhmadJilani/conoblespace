@@ -34,7 +34,7 @@
             class="overflow-hidden parallax d-flex align-items-center"
             style="height: 600px; width: 100%"
         >
-            <img src="demos/coworking/images/hero.jpg" class="parallax-bg" />
+            <img src="demos/coworking/images/slider.jpeg" class="parallax-bg" />
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -122,7 +122,7 @@
                         </h3>
                         <small class="text-black-50">Phone Number</small>
                         <br />
-                        <a href="tel:+923238878361">0323 8878361</a>
+                        <a href="tel:+924232803320">+92 423 2803320</a>
                         <br />
                         <small class="text-black-50">Email</small>
                         <br />

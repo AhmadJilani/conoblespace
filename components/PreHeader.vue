@@ -5,8 +5,8 @@
                 <div class="col-12">
                     <ul class="nav float-right">
                         <li class="border-right">
-                            <a href="tel:+923238878361" class="nav-link">
-                                <i class="fas fa-phone"></i> 03238878361</a
+                            <a href="tel:+924232803320" class="nav-link">
+                                <i class="fas fa-phone"></i> +92 423 2803320</a
                             >
                         </li>
                         <li class="border-right">
