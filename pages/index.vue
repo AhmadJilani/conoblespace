@@ -34,7 +34,7 @@
             class="overflow-hidden parallax d-flex align-items-center"
             style="height: 600px; width: 100%"
         >
-            <img src="demos/coworking/images/hero.jpg" class="parallax-bg" />
+            <img src="demos/coworking/images/slider.jpeg" class="parallax-bg" />
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -122,7 +122,7 @@
                         </h3>
                         <small class="text-black-50">Phone Number</small>
                         <br />
-                        <a href="tel:+923238878361">0323 8878361</a>
+                        <a href="tel:+924232803320">+92 423 2803320</a>
                         <br />
                         <small class="text-black-50">Email</small>
                         <br />
@@ -195,21 +195,21 @@ export default {
                 },
             ],
             gallery: [
-                "demos/coworking/images/gallery/1.jpg",
-                "demos/coworking/images/gallery/2.jpg",
-                "demos/coworking/images/gallery/3.jpg",
-                "demos/coworking/images/gallery/4.jpg",
-                "demos/coworking/images/gallery/5.jpg",
-                "demos/coworking/images/gallery/6.jpg",
-                "demos/coworking/images/gallery/7.jpg",
-                "demos/coworking/images/gallery/8.jpg",
-                "demos/coworking/images/gallery/9.jpg",
-                "demos/coworking/images/gallery/10.jpg",
-                "demos/coworking/images/gallery/11.jpg",
-                "demos/coworking/images/gallery/12.jpg",
-                "demos/coworking/images/gallery/13.jpg",
-                "demos/coworking/images/gallery/14.jpg",
-                "demos/coworking/images/gallery/15.jpg",
+            "demos/coworking/images/gallery/1.jpeg",
+                "demos/coworking/images/gallery/5.jpeg",
+                "demos/coworking/images/gallery/2.jpeg",
+                "demos/coworking/images/gallery/12.jpeg",
+                "demos/coworking/images/gallery/11.jpeg",
+                // "demos/coworking/images/gallery/6.jpeg",
+                "demos/coworking/images/gallery/10.jpeg",
+                // "demos/coworking/images/gallery/8.jpeg",
+                "demos/coworking/images/gallery/9.jpeg",
+                // "demos/coworking/images/gallery/7.jpeg",
+                "demos/coworking/images/gallery/4.jpeg",
+                "demos/coworking/images/gallery/3.jpeg",
+                // "demos/coworking/images/gallery/2.jpeg",
+                // "demos/coworking/images/gallery/7.jpeg",
+                // "demos/coworking/images/gallery/1.jpeg",
             ],
         };
     },
